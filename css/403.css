@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(129, 105, 223);
+    }
+    h1 {
+    text-align: center;
+    color: #ffffff;
+    }
+    table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    }
+    th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 3px solid #ffffff;
+    }
+    tr{
+        background-color: #eae9e9;
+    }
+    th {
+    background-color: #f2f2f2;
+    }
+    .profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+    .btn-details {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    }
+    .btn-details:hover{
+        background-color: #990000;
+    }
+    nav {
+        background-color: #b32764;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center; /* Центрирует текст внутри элемента */
+       
+        }
+        li {
+        display: inline;
+        margin-right: 20px; /* Расстояние между пунктами меню */
+        }
+        li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 30px;
+        }
+        li a:hover {
+        background-color: #bd0000;
+        }
+        .about-section {
+        font-family: Arial, sans-serif; /* Шрифт текста */
+        font-size: 16px; /* Размер шрифта */
+        line-height: 1.5; /* Высота строки */
+        color: #333; /* Цвет текста */
+        }
+        
+        .about-section h2 {
+        font-size: 24px; /* Размер заголовка */
+        color: rgb(0, 0, 0); /* Цвет заголовка */
+        margin-bottom: 10px; /* Отступ снизу */
+        text-align: center;
+        
+        }
+        
+        .about-section ul {
+        list-style-type: circle; /* Тип маркера для списков */
+        }
+        
+        .about-section p {
+        margin-bottom: 15px; /* Отступ снизу для параграфа */
+        }
+        
+        .about-section a {
+        color: #990000; /* Цвет ссылки */
+        text-decoration: none; /* Удаление подчеркивания у ссылки */
+        }
+        
+        .about-section a:hover {
+        text-decoration: underline; /* Подчеркивание ссылки при наведении */
+        }
+        .about-section p {
+        color: rgb(0, 0, 0);
+        }

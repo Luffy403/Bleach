@@ -1,0 +1,86 @@
+li {
+  display: inline;
+  margin-right: 20px;
+  color: #ffffff;
+  /* Расстояние между пунктами меню */
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+li a:hover {
+  background-color: #bd0000;
+}
+
+.container {
+  justify-content: center;
+  width: 1000px;
+  height: 2380px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+video {
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 300px;
+}
+
+.spisok-2 {
+  font-size: 22px;
+  display: block;
+  list-style-position: inside;
+  text-align: center;
+  margin: 0 auto;
+  /* Центрируем список по горизонтали */
+  width: fit-content;
+  /* Делаем ширину списка по содержимому */
+}
+
+.spisok-2 li {
+  margin-bottom: 10px;
+  text-align: left;
+  display: block;
+}
+
+p {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(129, 105, 223);
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: #b32764;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  /* Центрирует текст внутри элемента */
+}
+img{
+  max-width: 100%; /* Максимальная ширина изображения 100% */
+  vertical-align: middle; /* Вертикальное выравнивание изображения по центру */
+}
