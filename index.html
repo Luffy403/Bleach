@@ -1,71 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Bleach">
-<title>Bleach</title>
-<link rel="stylesheet" href="css/glavnya.css">
-<link rel="stylesheet" href="css/loader.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Это сайт о 3 куре аниме 'Блич' ">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Bleach.ico" type="image/x-icon">
+    <title>Bleach</title>
 </head>
 <body>
-<header>
-  <nav>
-      <ul>
-      <li><a href="anons.html">Анонс</a></li>
-      <li><a href="personazhi.html">Персонажи</a></li>
-      </ul>
-    </nav>
-    </header>
-    <br>
-    <br>
-    <br>
     <header>
-      <h1>Анонс 3 кура блича!</h1>
-      <h3><strong>Третья часть финальной арки «Блич: Тысячелетняя кровавая война» под названием «Конфликт» вышла 5 октября 2024 года. В ней будет 13 серий. 
-        Главный герой Ичиго Куросаки сразится с главарём квинси, который хочет уничтожить Общество душ. После победы над 0 отрядом, Яхве напал на  Ичибея. После аусвелена выжившие квинси захотели отомстить Яхве и пришли к шинигами.
-        Главнокомандующий "Сюнсуй Кьёраку" освобождает одного из "Особого Военного Потенциала" - "Соске Айзена". Все шинигами готовятся к вторжению во дворец "Короля Душ".
-      </strong></h3>
+        <nav>
+            <ul>
+                <li><a href="anons.html">Анонс</a></li>
+                <li><a href="personazhi.html">Персонажи</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="center-block">
-      <img src="img/Ичигомаска.jpg" alt="Image 1" class="slides active">
-      <img src="img/Блич.jpg" alt="Image 2" class="slides">
-      <img src="img/зангетсу.jpg" alt="Image 3" class="slides">
-      </div>
-      <script>
-      let slideIndex = 0;
-      const slides = document.getElementsByClassName("slides");
-      
-      function showSlides() {
-      for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-      slideIndex = 1;
-      }
-      slides[slideIndex - 1].classList.add("active");
-      }
-      
-      function showNext() {
-      slideIndex++;
-      if (slideIndex > slides.length) {
-      slideIndex = 1;
-      }
-      showSlides();
-      }
-      
-      function showPrevious() {
-      slideIndex--;
-      if (slideIndex < 1) {
-      slideIndex = slides.length;
-      }
-      showSlides();
-      }
-      
-      setInterval(showNext, 4000); // Change image every 2 seconds automatically
-      </script>
-    <script src="js/loader.js"></script>
-  </body>
+    <main>
+        <section class="container">
+            <h1>Анонс 3 кура блича!</h1>
+            <strong>
+                Третья часть финальной арки «Блич: Тысячелетняя кровавая война» под названием «Конфликт» вышла 5 октября 2024 года.
+                В ней будет 13 серий. 
+                Главный герой Ичиго Куросаки сразится с главарём квинси, который хочет уничтожить Общество душ.
+                После победы над 0 отрядом, Яхве напал на  Ичибея. После аусвелена выжившие квинси захотели отомстить Яхве и пришли к шинигами.
+                Главнокомандующий "Сюнсуй Кьёраку" освобождает одного из "Особого Военного Потенциала" - "Соске Айзена".
+                Все шинигами готовятся к вторжению во дворец "Короля Душ".
+            </strong>
+        </section>
+        <section class="center-block">
+            <img src="img/Ичигомаска.jpg" alt="Image 1" class="slides active">
+            <img src="img/Блич.jpg" alt="Image 2" class="slides">
+            <img src="img/зангетсу.jpg" alt="Image 3" class="slides">
+            <img src="img/Айзен.jpg" alt="Image 4" class="slides">
+            <img src="img/Ичиго.jpg" alt="Image 5" class="slides">
+            <script>
+            let slideIndex = 0;
+            const slides = document.getElementsByClassName("slides");
+            
+            function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+            slideIndex = 1;
+            }
+            slides[slideIndex - 1].classList.add("active");
+            }
+            
+            function showNext() {
+            slideIndex++;
+            if (slideIndex > slides.length) {
+            slideIndex = 1;
+            }
+            showSlides();
+            }
+            
+            function showPrevious() {
+            slideIndex--;
+            if (slideIndex < 1) {
+            slideIndex = slides.length;
+            }
+            showSlides();
+            }
+            
+            setInterval(showNext, 4000); // Change image every 2 seconds automatically
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>© Все права защищены. "Joker"</p>
+    </footer>
+</body>
 </html>

@@ -1,12 +1,34 @@
-li {
-  display: inline;
-  margin-right: 20px;
-  color: #ffffff;
-  /* Расстояние между пунктами меню */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-li a {
-  display: inline-block;
+body {
+  background-color: rgb(129, 105, 223);
+  overflow: scroll;
+}
+
+header {
+  background-color: #b32764;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  text-decoration-color: beige;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-right: 20px;
   color: white;
   text-align: center;
   padding: 10px 20px;
@@ -14,23 +36,30 @@ li a {
   font-size: 30px;
 }
 
-li a:hover {
-  background-color: #bd0000;
+nav ul li a:hover {
+  background-color: rgb(62, 62, 151);
+  border-radius: 10px;
 }
 
 .container {
-  justify-content: center;
-  width: 1000px;
-  height: 2380px;
   margin: auto;
+  width: 80%; /* Изменено на 80% для адаптивности */
+  max-width: 1000px; /* Максимальная ширина */
+  height: auto; /* Высота автоматически подстраивается */
+  margin-top: 65px;
   box-sizing: border-box;
+  background-color: rgba(64, 23, 107, 0.5);
+  border-radius: 30px;
+  border: 5px solid rgb(255, 255, 255);
 }
 
 video {
-  display: block;
+  border-radius: 30px;
   margin: auto;
-  width: 600px;
-  height: 300px;
+  width: 100%; /* Изменено на 100% для адаптивности */
+  max-width: 600px; /* Максимальная ширина видео */
+  padding-top: 15px;
+  margin-bottom: 15px;
 }
 
 .spisok-2 {
@@ -39,9 +68,7 @@ video {
   list-style-position: inside;
   text-align: center;
   margin: 0 auto;
-  /* Центрируем список по горизонтали */
   width: fit-content;
-  /* Делаем ширину списка по содержимому */
 }
 
 .spisok-2 li {
@@ -60,27 +87,119 @@ h1 {
   color: #ffffff;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(129, 105, 223);
-  background-attachment: fixed;
-}
-
-nav {
-  background-color: #b32764;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-  /* Центрирует текст внутри элемента */
-}
-img{
+img {
   max-width: 100%; /* Максимальная ширина изображения 100% */
   vertical-align: middle; /* Вертикальное выравнивание изображения по центру */
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #b32764;
+  color: #ffffff;
+  padding: 23px;
+  color: beige;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.container p {
+  padding: 25px;
+}
+
+.container p:first-child {
+  padding-top: 30px;
+}
+
+.container-2 {
+  background-color: rgba(64, 23, 107, 0.5);
+  width: 80%; /* Изменено на 80% для адаптивности */
+  max-width: 700px; /* Максимальная ширина */
+  margin: 60px auto;
+  border-radius: 30px;
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.container-2 h1 {
+  padding-top: 30px;
+}
+
+.container-2 ol {
+  color: beige;
+  padding: 20px;
+}
+
+.container-3 {
+  background-color: rgba(64, 23, 107, 0.5);
+  width: 80%; /* Изменено на 80% для адаптивности */
+  max-width: 700px; /* Максимальная ширина */
+  text-align: center;
+  margin: auto;
+  border-radius: 30px;
+  padding: 5px;
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.container-3 h1 {
+  margin: 30px 0 30px 0;
+  margin-bottom: 0px;
+}
+
+.container-3 video:last-child {
+  margin-bottom: 40px;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+  nav ul li a {
+      font-size: 20px; /* Уменьшение размера шрифта для мобильных */
+  }
+  
+  p {
+      font-size: 18px; /* Уменьшение размера шрифта для абзацев */
+  }
+
+  h1 {
+      font-size: 24px; /* Уменьшение размера шрифта для заголовков */
+    }
+
+    .container, .container-2, .container-3 {
+        width: 95%; /* Увеличение ширины контейнеров для мобильных устройств */
+        margin: 20px auto; /* Уменьшение отступов сверху и снизу */
+    }
+
+    video {
+        width: 100%; /* Установка ширины видео на 100% */
+    }
+
+    .spisok-2 {
+        font-size: 18px; /* Уменьшение размера шрифта для списка */
+    }
+
+    footer {
+        font-size: 20px; /* Уменьшение размера шрифта для футера */
+    }
+}
+
+/* Для очень маленьких экранов, например, телефонов */
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 18px; /* Дополнительное уменьшение размера шрифта для навигации */
+    }
+
+    p {
+        font-size: 16px; /* Дополнительное уменьшение шрифта для абзацев */
+    }
+
+    h1 {
+        font-size: 22px; /* Дополнительное уменьшение шрифта для заголовков */
+    }
+
+    footer {
+        font-size: 18px; /* Дополнительное уменьшение шрифта для футера */
+    }
+
+    .container, .container-2, .container-3 {
+        padding: 10px; /* Уменьшение внутреннего отступа для контейнеров */
+    }
 }
