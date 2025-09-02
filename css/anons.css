@@ -1,205 +1,142 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
 body {
   background-color: rgb(129, 105, 223);
-  overflow: scroll;
 }
-
-header {
-  background-color: #b32764;
-  color: #ffffff;
-  text-align: center;
-  padding: 5px 0;
-  text-decoration-color: beige;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  flex-wrap: wrap;
-}
-
-nav ul li a {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-right: 20px;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-nav ul li a:hover {
-  background-color: rgb(62, 62, 151);
-  border-radius: 10px;
-}
-
 .container {
   margin: auto;
-  width: 80%; /* Изменено на 80% для адаптивности */
-  max-width: 1000px; /* Максимальная ширина */
-  height: auto; /* Высота автоматически подстраивается */
+  width: 100%; 
+  max-width: 1000px; 
   margin-top: 65px;
-  box-sizing: border-box;
   background-color: rgba(64, 23, 107, 0.5);
   border-radius: 30px;
   border: 5px solid rgb(255, 255, 255);
 }
-
-video {
-  border-radius: 30px;
-  margin: auto;
-  width: 100%; /* Изменено на 100% для адаптивности */
-  max-width: 600px; /* Максимальная ширина видео */
-  padding-top: 15px;
-  margin-bottom: 15px;
-}
-
-.spisok-2 {
-  font-size: 22px;
-  display: block;
-  list-style-position: inside;
-  text-align: center;
-  margin: 0 auto;
-  width: fit-content;
-}
-
-.spisok-2 li {
-  margin-bottom: 10px;
-  text-align: left;
-  display: block;
-}
-
-p {
+.container p {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
+  padding: 30px 25px 25px 25px;
+  line-height: 130%;
 }
 
-h1 {
-  text-align: center;
-  color: #ffffff;
-}
-
-img {
-  max-width: 100%; /* Максимальная ширина изображения 100% */
-  vertical-align: middle; /* Вертикальное выравнивание изображения по центру */
+.container img {
+  max-width: 100%; 
+  vertical-align: middle; /*чтобы после айзена лишних отступов не было*/
   border-radius: 20px;
 }
 
-footer {
-  text-align: center;
-  background-color: #b32764;
-  color: #ffffff;
-  padding: 23px;
-  color: beige;
-  font-size: 25px;
-  margin-top: 30px;
-}
 
-.container p {
-  padding: 25px;
-}
-
-.container p:first-child {
-  padding-top: 30px;
-}
-
-.container-2 {
+.series {
   background-color: rgba(64, 23, 107, 0.5);
-  width: 80%; /* Изменено на 80% для адаптивности */
+  width: 100%; /* Изменено на 80% для адаптивности */
   max-width: 700px; /* Максимальная ширина */
   margin: 60px auto;
   border-radius: 30px;
   border: 5px solid rgb(255, 255, 255);
 }
-
-.container-2 h1 {
+.series h1 {
   padding-top: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
 }
 
-.container-2 ol {
+.spisok ol {
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
   color: beige;
   padding: 20px;
+  list-style-type: none;
+  text-align: justify;
+  max-width: 600px;
+  width: 100%;
+  margin: 10px auto 20px auto;
 }
 
-.container-3 {
+
+.videos {
   background-color: rgba(64, 23, 107, 0.5);
-  width: 80%; /* Изменено на 80% для адаптивности */
+  width: 100%; /* Изменено на 80% для адаптивности */
   max-width: 700px; /* Максимальная ширина */
   text-align: center;
-  margin: auto;
+  margin: 0 auto 60px auto;
   border-radius: 30px;
-  padding: 5px;
+  padding: 10px;
   border: 5px solid rgb(255, 255, 255);
 }
-
-.container-3 h1 {
-  margin: 30px 0 30px 0;
-  margin-bottom: 0px;
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
 }
-
-.container-3 video:last-child {
-  margin-bottom: 40px;
+.item h2 {
+  margin: 30px 0 0 0;
+  color: #ffffff;
+  font-size: 24px;
 }
-
-/* Медиа-запросы для мобильных устройств */
+.item video {
+  border-radius: 30px;
+  margin: auto;
+  width: 100%; 
+  max-width: 600px;
+}
 @media (max-width: 768px) {
-  nav ul li a {
-      font-size: 20px; /* Уменьшение размера шрифта для мобильных */
+
+  .container p {
+      font-size: 18px; 
   }
-  
-  p {
-      font-size: 18px; /* Уменьшение размера шрифта для абзацев */
-  }
-
-  h1 {
-      font-size: 24px; /* Уменьшение размера шрифта для заголовков */
+    .container {
+        width: 90%; 
+        margin: 20px auto; 
     }
-
-    .container, .container-2, .container-3 {
-        width: 95%; /* Увеличение ширины контейнеров для мобильных устройств */
-        margin: 20px auto; /* Уменьшение отступов сверху и снизу */
+    .series {
+      width: 80%; 
+      margin: 20px auto; 
     }
-
+    .series h1 {
+      font-size: 24px; 
+    }
+    .spisok ol{
+      font-size: 18px; 
+    }
+    .videos {
+      width: 90%; 
+      margin: 20px auto; 
+    }
+    .videos h2{
+      font-size: 20px;
+    }
     video {
-        width: 100%; /* Установка ширины видео на 100% */
+        width: 100%; 
     }
 
-    .spisok-2 {
-        font-size: 18px; /* Уменьшение размера шрифта для списка */
-    }
+  
 
-    footer {
-        font-size: 20px; /* Уменьшение размера шрифта для футера */
-    }
 }
 
-/* Для очень маленьких экранов, например, телефонов */
+
 @media (max-width: 480px) {
     nav ul li a {
-        font-size: 18px; /* Дополнительное уменьшение размера шрифта для навигации */
+        font-size: 18px; 
     }
 
-    p {
-        font-size: 16px; /* Дополнительное уменьшение шрифта для абзацев */
+    .container p {
+        font-size: 16px; 
     }
 
-    h1 {
-        font-size: 22px; /* Дополнительное уменьшение шрифта для заголовков */
+    .series h1 {
+        font-size: 22px; 
     }
-
+    .spisok ol{
+      font-size: 16px;
+    }
+    
     footer {
-        font-size: 18px; /* Дополнительное уменьшение шрифта для футера */
+        font-size: 18px; 
     }
 
-    .container, .container-2, .container-3 {
-        padding: 10px; /* Уменьшение внутреннего отступа для контейнеров */
-    }
+    
 }
