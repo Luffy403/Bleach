@@ -7,34 +7,29 @@
     <meta name="description" content="Это страница о Йоруичи(моя вайфу)!">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/personazh.css">
-    <link rel="icon" href="../img/Bleach.ico" type="image/x-icon">
+    <link rel="icon" href="../ico/Bleach.ico" type="image/x-icon">
     <title>Подробная информация</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../anons.html">Анонс</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        require_once '../includes/header.php';
+    ?>
     <main>
         <section class="container">
             <h1>Информация о персонаже</h1>
-            <img src="../img/Йоруичи.jpg" alt="Йоруичи">
+            <img src="../img/Шинигами/Йоруичи.jpg" alt="Йоруичи">
             <h2>Йоруичи Шихоин</h2>
             <p>
-                Йоручи Шихоин (моя вайфу) — один из самых харизматичных персонажей аниме "Блич". 
+                Йоручи Шихоин  — один из самых харизматичных персонажей аниме "Блич". 
                Она является бывшим капитаном 2-го отряда Готей 13 и известна своей удивительной быстротой и мастерством рукопашного боя.</p>
             <video src="../video/Йоруичи.mp4" controls></video>
             <div class="btn-class">
-                <a href="../personazhi.html">Назад</a>
+                <a href="../personazhi.php">Назад</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>© Все права защищены. "Joker"</p>
-    </footer>
+    <?php
+        require_once '../includes/footer.php';
+    ?>
 </body>
 </html>

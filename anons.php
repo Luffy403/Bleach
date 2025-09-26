@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Анонс аниме Блич!">
-    <title>Анонс аниме</title>
+    <meta name="description" content="">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/anons.css">
-    <link rel="icon" href="img/Bleach.ico" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="ico/Bleach.ico" type="image/x-icon">
+    <title>Анонс</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="personazhi.html">Персонажи</a></li>
-            </ul>
-        </nav>
-    </header>
+    <? require_once 'includes/header.php' ; ?>
     <main>
         <section class="container">
             <p>
@@ -27,7 +19,7 @@
             От внимания зрителей не укрылась тщательная подготовка авторов к своей работе, включая качественный дизайн
             главных героев, за что стоит поблагодарить компанию "Pierrot".
             </p>
-            <img src="img/ткв1.jpg" alt="Первая картинка">
+            <img src="img/Шинигами/ткв1.jpg" alt="Первая картинка">
             <p>
                 После событий оригинального аниме Ичиго Куросаки продолжает свои обязанности Временного шинигами вместе
                 со своими друзьями, включая Урью Исиду.
@@ -36,7 +28,7 @@
                 Ичиго пытается помешать Квинси уничтожить Общество Душ, в то время как Урью копается в прошлом и
                 обнаруживает резню Квинси, устроенную жестокими Шинигами более тысячи лет назад.
             </p>
-            <img src="img/ткв2.jpg" alt="Вторая картинка">
+            <img src="img/Шинигами/ткв2.jpg" alt="Вторая картинка">
             <p>Во время вторжения многие капитаны Общества Душ получают ранения, а главнокомандующий Генрюсай Шигекуни
                 Ямамото убит в битве с Яхве.
                 Общество Душ пытается восстановиться, и Ичиго с Ренджи Абараи присоединяются к тренировкам Нулевого
@@ -48,7 +40,7 @@
                 Это делает Ичиго наполовину Шинигами, наполовину Квинси.
                 Разобравшись с секретами своей семьи, Ичиго завершает обучение в Нулевом отряде.
             </p>
-            <img src="img/ткв3.jpg" alt="Третья картинка">
+            <img src="img/Шинигами/ткв3.jpg" alt="Третья картинка">
         </section>
         <section class="series">
             <h1>Выход серий</h1>
@@ -85,8 +77,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        <span>© Все права защищены. "Joker"</span>
-    </footer>
+    <? require_once 'includes/footer.php' ; ?>
 </body>
 </html>

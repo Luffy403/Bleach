@@ -1,14 +1,20 @@
 body {
-  background-color: rgb(129, 105, 223);
+    background: url('../img/Шинигами/Ичиго\ рог.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
-.container {
-  margin: auto;
-  width: 100%; 
-  max-width: 1000px; 
-  margin-top: 65px;
-  background-color: rgba(64, 23, 107, 0.5);
-  border-radius: 30px;
-  border: 5px solid rgb(255, 255, 255);
+main{
+    padding: 0 40px;
+}
+.container{
+    max-width: 900px;
+    width: 100%;
+    background-color: #40176be0;
+    border-radius: 40px;
+    border: 5px solid #7D4A80;
+    margin: 70px auto;
 }
 .container p {
   color: #ffffff;
@@ -18,19 +24,20 @@ body {
 }
 
 .container img {
-  max-width: 100%; 
-  vertical-align: middle; /*чтобы после айзена лишних отступов не было*/
-  border-radius: 20px;
+    width: 100%; 
+    vertical-align: middle; /*чтобы после айзена лишних отступов не было*/
+    border-radius: 20px;
 }
-
-
+.container img:last-child{
+    border-radius: 20px 20px 36px 36px;
+}
 .series {
-  background-color: rgba(64, 23, 107, 0.5);
-  width: 100%; /* Изменено на 80% для адаптивности */
-  max-width: 700px; /* Максимальная ширина */
+  background-color: #40176be0;
+  width: 100%;
+  max-width: 700px; 
   margin: 60px auto;
   border-radius: 30px;
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid #7D4A80;
 }
 .series h1 {
   padding-top: 30px;
@@ -38,7 +45,6 @@ body {
   color: #ffffff;
   font-size: 30px;
 }
-
 .spisok ol {
   font-size: 22px;
   font-weight: 500;
@@ -54,17 +60,15 @@ body {
   width: 100%;
   margin: 10px auto 20px auto;
 }
-
-
 .videos {
-  background-color: rgba(64, 23, 107, 0.5);
-  width: 100%; /* Изменено на 80% для адаптивности */
-  max-width: 700px; /* Максимальная ширина */
+background-color: #40176be0;
+  width: 100%; 
+  max-width: 700px;
   text-align: center;
   margin: 0 auto 60px auto;
   border-radius: 30px;
   padding: 10px;
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid #7D4A80;
 }
 .item {
   display: flex;
@@ -84,10 +88,12 @@ body {
   max-width: 600px;
 }
 @media (max-width: 768px) {
-
+  main{
+    padding: 0 20px;
+  }
   .container p {
       font-size: 18px; 
-  }
+    }
     .container {
         width: 90%; 
         margin: 20px auto; 
@@ -112,31 +118,21 @@ body {
     video {
         width: 100%; 
     }
-
-  
-
 }
-
-
 @media (max-width: 480px) {
+    main{
+      padding: 0 10px;
+    }
     nav ul li a {
         font-size: 18px; 
     }
-
     .container p {
         font-size: 16px; 
     }
-
     .series h1 {
         font-size: 22px; 
     }
     .spisok ol{
       font-size: 16px;
     }
-    
-    footer {
-        font-size: 18px; 
-    }
-
-    
 }

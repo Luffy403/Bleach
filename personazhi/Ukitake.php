@@ -7,22 +7,17 @@
     <meta name="description" content="Это страница о Укитаке">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/personazh.css">
-    <link rel="icon" href="../img/Bleach.ico" type="image/x-icon">
+    <link rel="icon" href="../ico/Bleach.ico" type="image/x-icon">
     <title>Подробная информация</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../anons.html">Анонс</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        require_once '../includes/header.php';
+    ?>
     <main>
         <section class="container">
             <h1>Информация о персонаже</h1>
-            <img src="../img/Укитаке.jpg" alt="Укитаке">
+            <img src="../img/Шинигами/Укитаке.jpg" alt="Укитаке">
             <h2>Джуширо Укитаке</h2>
             <p>
                 Джуширо Укитаке — капитан 13-го отряда Готей 13 в аниме "Блич".
@@ -31,12 +26,12 @@
             </p>
             <video src="../video/Укитаке.mp4" controls></video>
             <div class="btn-class">
-                <a href="../personazhi.html">Назад</a>
+                <a href="../personazhi.php">Назад</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>© Все права защищены. "Joker"</p>
-    </footer>      
+    <?php
+        require_once '../includes/footer.php';
+    ?>    
 </body>
 </html>

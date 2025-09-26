@@ -7,37 +7,32 @@
     <meta name="description" content="Это страница о Урахаре(я)!">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/personazh.css">
-    <link rel="icon" href="../img/Bleach.ico" type="image/x-icon">
+    <link rel="icon" href="../ico/Bleach.ico" type="image/x-icon">
     <title>Подробная информация</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../anons.html">Анонс</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        require_once '../includes/header.php';
+    ?>
     <main>
         <section class="container">
             <h1>Информация о персонаже</h1>
-            <img src="../img/Урахара.jpg" alt="Урахара">
+            <img src="../img/Шинигами/Урахара.jpg" alt="Урахара">
             <h2>Урахара Киске</h2>
             <p>
-                Урахара Киске(я) — один из ярких персонажей аниме "Блич".
+                Урахара Киске — один из ярких персонажей аниме "Блич".
                 Он является владельцем магазина Урахары, где продаются различные товары для Сообщества Душ.
                 Урахара обладает эксцентричным характером и часто проявляет юмор, что делает его притягательным для окружающих.
                 Но также Урахара является одним из гениальных персонажей, на равне с Айзеном.
             </p>
             <video src="../video/Урахара.mp4" controls></video>
             <div class="btn-class">
-                <a href="../personazhi.html">Назад</a>
+                <a href="../personazhi.php">Назад</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>© Все права защищены. "Joker"</p>
-    </footer>
+    <?php
+        require_once '../includes/footer.php';
+    ?>
 </body>
 </html>

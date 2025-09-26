@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Это страница о Орихиме!">
+    <meta name="description" content="Это страница о Рендзи!">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/personazh.css">
-    <link rel="icon" href="../img/Bleach.ico" type="image/x-icon">
+    <link rel="icon" href="../ico/Bleach.ico" type="image/x-icon">
     <title>Подробная информация</title>
     <style>
         @media(max-width:440px){
@@ -37,32 +37,27 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../anons.html">Анонс</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        require_once '../includes/header.php';
+    ?>
     <main>
         <section class="container">
             <h1>Информация о персонаже</h1>
-            <img src="../img/Орихиме.jpg" alt="Орихиме">
-            <h2>Орихимэ Ионуэ</h2>
+            <img src="../img/Шинигами/Ренджи.jpg" alt="Ренджи">
+            <h2>Ренджи Абарай</h2>
             <p>
-                Орихиме Иноуэ — один из ключевых персонажей аниме "Блич".
-                Она обладательница яркого характера и доброй души, известна своей заботой о других.
-                Орихиме имеет длинные рыжие волосы и часто носит косички, что придает ей миловидный вид.
+                Ренджи Абарай — ключевой персонаж в аниме "Блич", летейнант 6-го отряда и обладатель яркой индивидуальности. 
+                С длинными алыми волосами и татуировками, он выделяется среди других шинигами. 
+                Ренджи известен своим темпераментом и преданностью друзьям, особенно Ичиго Куросаки.
             </p>
-            <video src="../video/Орихиме.mp4" controls></video>
+            <video src="../video/Ренджи.mp4" controls></video>
             <div class="btn-class">
-                <a href="../personazhi.html">Назад</a>
+                <a href="../personazhi.php">Назад</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>© Все права защищены. "Joker"</p>
-    </footer>
+    <?php
+        require_once '../includes/footer.php';
+    ?>
 </body>
 </html>

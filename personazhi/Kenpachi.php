@@ -7,22 +7,17 @@
     <meta name="description" content="Это страница о Кенпачи!">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/personazh.css">
-    <link rel="icon" href="../img/Bleach.ico" type="image/x-icon">
+    <link rel="icon" href="../ico/Bleach.ico" type="image/x-icon">
     <title>Подробная информация</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../anons.html">Анонс</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        require_once '../includes/header.php';
+    ?>
     <main>
         <section class="container">
             <h1>Информация о персонаже</h1>
-            <img src="../img/Кенпачи.jpg" alt="Кенпачи">
+            <img src="../img/Шинигами/Кенпачи.jpg" alt="Кенпачи">
             <h2>Кенпачи Зараки</h2>
             <p>
                 "Кенпачи" Зараки — один из самых мощных и харизматичных персонажей аниме "Блич".
@@ -33,12 +28,12 @@
             </p>
             <video src="../video/Кенпачи.mp4" controls></video>
             <div class="btn-class">
-                <a href="../personazhi.html">Назад</a>
+                <a href="../personazhi.php">Назад</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>© Все права защищены. "Joker"</p>
-    </footer>
+    <?php
+        require_once '../includes/footer.php';
+    ?>
 </body>
 </html>

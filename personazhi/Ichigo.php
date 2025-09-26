@@ -7,22 +7,17 @@
     <meta name="description" content="Это страница о Ичиго!">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/personazh.css">
-    <link rel="icon" href="../img/Bleach.ico" type="image/x-icon">
+    <link rel="icon" href="../ico/Bleach.ico" type="image/x-icon">
     <title>Подробная информация</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../anons.html">Анонс</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        require_once '../includes/header.php';
+    ?>
     <main>
         <section class="container">
             <h1>Информация о персонаже</h1>
-            <img src="../img/Ичиго.jpg" alt="Ичиго">
+            <img src="../img/Шинигами/Ичиго.jpg" alt="Ичиго">
             <h2>Ичиго Куросаки</h2>
             <p>Ичиго Куросаки — главный герой аниме "Блич".
                 Он — подросток с уникальной способностью видеть духов.
@@ -30,12 +25,12 @@
                 Несмотря на свою суровую внешность, Ичиго проявляет глубокую эмоциональность и заботу о своих друзьях.</p>
             <video src="../video/Ичиго.mp4" controls></video>
             <div class="btn-class">
-                <a href="../personazhi.html">Назад</a>
+                <a href="../personazhi.php">Назад</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>© Все права защищены. "Joker"</p>
-    </footer>
+    <?php
+        require_once '../includes/footer.php';
+    ?>
 </body>
 </html>

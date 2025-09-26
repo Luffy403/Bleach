@@ -7,22 +7,17 @@
     <meta name="description" content="Это страница о Рукии!">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/personazh.css">
-    <link rel="icon" href="../img/Bleach.ico" type="image/x-icon">
+    <link rel="icon" href="../ico/Bleach.ico" type="image/x-icon">
     <title>Подробная информация</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../anons.html">Анонс</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        require_once '../includes/header.php';
+    ?>
     <main>
         <section class="container">
             <h1>Информация о персонаже</h1>
-            <img src="../img/Рукия.jpg" alt="Рукия">
+            <img src="../img/Шинигами/Рукия.jpg" alt="Рукия">
             <h2>Рукия Кучики</h2>
             <p>
                 Рукия Кучики — одна из главных героинь аниме "Блич". Она является шинигами и служит в Готее 13, защищая мир от пустых. 
@@ -30,13 +25,13 @@
             </p>
             <video src="../video/Рукия.mp4" controls></video>
             <div class="btn-class">
-                <a href="../personazhi.html">Назад</a>
+                <a href="../personazhi.php">Назад</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>© Все права защищены. "Joker"</p>
-    </footer>
+    <?php
+        require_once '../includes/footer.php';
+    ?>
 </body>
 </html>
 

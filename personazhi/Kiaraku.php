@@ -7,7 +7,7 @@
     <meta name="description" content="Это страница о Кьёраку">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/personazh.css">
-    <link rel="icon" href="../img/Bleach.ico" type="image/x-icon">
+    <link rel="icon" href="../ico/Bleach.ico" type="image/x-icon">
     <title>Подробная информация</title>
     <style>
         @media(max-width:440px){
@@ -37,18 +37,13 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../anons.html">Анонс</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        require_once '../includes/header.php';
+    ?>
     <main>
         <section class="container">
             <h1>Информация о персонаже</h1>
-            <img src="../img/Кьёраку.jpg" alt="Кьёраку">
+            <img src="../img/Шинигами/Кьёраку.jpg" alt="Кьёраку">
             <h2>Кьёраку Сунсуй</h2>
             <p>
                 Кьёраку Сунсуй — капитан 8-го отряда Готей 13 в аниме "Блич". 
@@ -57,12 +52,12 @@
             </p>
             <video src="../video/Кьёраку.mp4" controls></video>
             <div class="btn-class">
-                <a href="../personazhi.html">Назад</a>
+                <a href="../personazhi.php">Назад</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>© Все права защищены. "Joker"</p>
-    </footer>
+    <?php
+        require_once '../includes/footer.php';
+    ?>
 </body>
 </html>
